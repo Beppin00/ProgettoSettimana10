@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Progetto_Settimana_10": {
+    "es3_Angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/progetto-settimana-10",
+            "outputPath": "dist/es3-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Progetto_Settimana_10:build:production"
+              "browserTarget": "es3_Angular:build:production"
             },
             "development": {
-              "browserTarget": "Progetto_Settimana_10:build:development"
+              "browserTarget": "es3_Angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Progetto_Settimana_10:build"
+            "browserTarget": "es3_Angular:build"
           }
         },
         "test": {
@@ -103,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a5dcc184-7b3c-43e5-8c6c-13ba6309b43c"
   }
 }
